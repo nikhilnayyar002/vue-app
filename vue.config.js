@@ -1,16 +1,14 @@
-
-const serverDomain = `http://localhost:${process.env.SERVER_PORT}`
+const { CONFIG } = require('./src/appConfig');
 
 module.exports = {
     devServer: {
-        port: process.env.CLIENT_PORT,
         proxy: {
             '/socket.io': {
-                target: serverDomain,
+                target: CONFIG.DEV_SERVER,
                 ws: true
             },
-            '/api': {
-                target: serverDomain,
+            [CONFIG.API_BASE ? CONFIG.API_BASE : "/"]: {
+                target: CONFIG.DEV_SERVER,
             },
         },
     },

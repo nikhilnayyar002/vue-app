@@ -1,24 +1,41 @@
 # video-conference
 
-## Project setup
-```
-npm install
-```
+## Installing dependencies
 
-### Compiles and hot-reloads for development
+* since **package-lock.json** file is in repo. One can use the following command to install dependencies:
+
+    ```
+    npm ci
+    ```
+
+* on occassions a developer should be responsible for updating dependencies using command:
+
+    ```
+    npm i
+    ```
+
+## Guides
+
+[Project Configeration](guides/project-config.md)
+
+[Styling](guides/styling.md)
+
+[Application](guides/application.md)
+
+## Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+## Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
+## Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
