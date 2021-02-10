@@ -172,6 +172,27 @@ src
 * ```_common.scss``` is basically is supposed to contain css common to application components. One must ensure that these styles are basic and general.
 * ```_variables.scss``` is basically is supposed to contain sass & css variables.
 * ```index.scss``` includes other sass files and provide some root level css.
+    > Note: Order of import matters
+    > ```scss
+    >//index.scss
+    > @import "./config";
+    > @import "./bootstrap";
+    > @import "./common";
+    > ```
+    > Here we import ```config``` first as it will be containing configerations that will override ```bootstrap``` config and hence produce expected css output. For example:
+    > ```scss
+    >//_variables.scss
+    >$primary:#039BE5;
+    >$secondary:#242424;
+    >
+    >//_config.scss
+    >@use "./variables" as var;
+    >
+    >// These variables will override bootstrap variables
+    >$primary:var.$primary;
+    >$secondary:var.$secondary;
+    > ```
+    >Since ```config``` is imported before ```bootstrap``` therefore in bootstrap **primary** & **secondary** variables (hence colors) will be overrided.
 
 ## BEM
 

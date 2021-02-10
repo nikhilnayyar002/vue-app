@@ -1,6 +1,6 @@
-@use "./config";
-@use "./bootstrap";
-@use "./common";
+@import "./config";
+@import "./bootstrap";
+@import "./common";
 
 :root {
   font-size: 1rem;

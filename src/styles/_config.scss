@@ -1,0 +1,5 @@
+@use "./variables" as var;
+
+// These variables will override bootstrap variables
+$primary:var.$primary;
+$secondary:var.$secondary;
