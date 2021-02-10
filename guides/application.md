@@ -73,4 +73,9 @@ Config your application store here.
 ### ```src/styles```
 Add global level styling to your application. Here you config/custom theme and set root level css. Read more about this here [Styling](styling.md).
 
+### ```src/appConfig.js```
+It exports values a kind of config the application may need like environment variables etc. It can export values that are specified by the server etc.
+Thus making all related values stored in one place they can be reflected whereever used. This file is also used by ```vue.config.js```.
 
+### ```src/main.js```
+It creates the vue application.
