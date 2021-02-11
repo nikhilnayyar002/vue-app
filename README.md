@@ -22,6 +22,10 @@
 
 [Application](guides/application.md)
 
+[Components Detail](guides/components.md)
+
+[Formatting](guides/formatting.md)
+
 [Vue Cli](https://cli.vuejs.org/guide/) : Learn about public folder, bundler configeration, vue-cli-service etc here.
 
 ## Compiles and hot-reloads for development
