@@ -1,6 +1,65 @@
 @use "./variables" as var;
 
-// These variables will override bootstrap variables
-$primary:var.$primary;
-$secondary:var.$secondary;
-$body-bg:#000;
+$primary: var.$primary;
+$secondary: var.$secondary;
+$body-bg: #000;
+$body-color:#fff;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+$custom-colors: (
+  "black": #000
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$custom-font-sizes: (
+  7: $font-size-base * 0.875 //14px,,
+);
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+
+@import "bootstrap/scss/utilities";
+
+$custom-utilities: (
+  "opacity": (
+    property: opacity,
+    values: (
+      0: 0,
+      50: 0.5,
+      70: 0.7
+    ),
+  ),
+);
+
+$utilities: map-merge($utilities, $custom-utilities);
+
+// quick patch
+.btn,
+.dropdown,
+input,
+textarea {
+  outline: none !important;
+}
+.btn,
+input,
+textarea {
+  border: 0 !important;
+}
+.dropdown,
+input,
+textarea {
+  box-shadow: none !important;
+}
+.btn:focus,
+.btn:active {
+  box-shadow: none !important;
+}
+.btn:disabled {
+  opacity: 1 !important;
+}
+// .

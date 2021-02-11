@@ -2,9 +2,13 @@
 
 ## Formating Code
 
-### .js/.scss/.css/.html
+### .js/.css/.html
 
 Use VS Code Default Formatter for all. Dont use prettier or any other formatter.
+
+### .scss
+
+Use  VS Code prettier extention.
 
 ### .vue Files
 
