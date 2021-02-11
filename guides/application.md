@@ -15,7 +15,7 @@ src
 ├── store
 ├── styles
 ├── appConfig.js
-└── main.js
+└── main.js 
 ```
 
 ### ```src/server/apis```
@@ -91,3 +91,38 @@ Thus making all related values stored in one place they can be reflected whereev
 
 ### ```src/main.js```
 It creates the vue application.
+
+## Component Tree
+
+Below is the tree diagram generated using **VS Code Extension: aprilandjan.ascii-tree-generator** from the structure mentioned in the file [components.txt](components.txt). Learn more about what a specific component does [here](components.md).
+
+```
+App
+├── AppNavbar
+├── AppMain
+│   ├── AppContent
+│   │   └── Surface
+│   │       ├── Reflection
+│   │       │   ├── Threator
+│   │       │   │   ├── ThreatorHost
+│   │       │   │   └── UserReflection
+│   │       │   └── UserReflection
+│   │       └── RemoteHosts
+│   │           ├── Participants
+│   │           │   └── Participant
+│   │           └── Spectators
+│   │               └── Spectator
+│   └── AppSide
+│       └── CommentArea
+│           ├── Comments
+│           │   └── Comment
+│           │       ├── RaiseHandComment
+│           │       │   └── CommonComment
+│           │       └── CommonComment
+│           └── CommentControls
+└── AppFooter
+    └── ActionBar
+        ├── GeneralControls
+        ├── HostControls
+        └── ParticipantControls
+```
