@@ -8,6 +8,8 @@ src
 │   └── apis
 ├── assets
 ├── components
+│   ├── common
+│   └── main
 ├── data
 ├── lib
 ├── store
@@ -35,6 +37,16 @@ Add the assets you use within the application here.
 
 ### ```src/components```
 create vue components inside this directory.
+
+```
+├── components
+│   ├── common
+│   └── main
+│       └── App.vue
+```
+
+* **Common** : The one that are reused among different components.
+* **main** : The one that are unique and not reused.
 
 ### ```src/data```
 Store data needed by components etc.
