@@ -3,7 +3,7 @@
     <div class="col-auto">
       <AppNavbar />
     </div>
-    <div class="col">
+    <div class="col overflow-hidden">
       <AppMain />
     </div>
     <div class="col-auto">

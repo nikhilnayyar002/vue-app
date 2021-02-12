@@ -114,11 +114,9 @@ App
 │   │               └── Spectator
 │   └── AppSide
 │       └── CommentArea
-│           ├── Comments
-│           │   └── Comment
-│           │       ├── RaiseHandComment
-│           │       │   └── CommonComment
-│           │       └── CommonComment
+│           ├── Comment
+│           │   ├── HandRaiseComment
+│           │   └── NormalComment
 │           └── CommentControls
 └── AppFooter
     └── ActionBar

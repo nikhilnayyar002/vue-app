@@ -1,5 +1,5 @@
 <template>
-  <div class="AppSide bg-secondary h-100 px-3 rounded-3">
+  <div class="AppSide bg-secondary h-100 px-4 rounded-3">
     <CommentArea />
   </div>
 </template>
@@ -16,6 +16,6 @@ export default {
 </script>
 <style>
 .AppSide {
-    width: 20rem;
+    width: 21rem;
 }
 </style>
