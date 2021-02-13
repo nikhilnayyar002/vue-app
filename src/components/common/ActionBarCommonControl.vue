@@ -2,6 +2,7 @@
   <div>
     <button
       class="align-items-center btn btn-secondary d-flex justify-content-center p-0 rounded-circle box-3rem mb-3 mx-auto"
+      @click="this.$emit('click')"
     >
       <slot></slot>
     </button>
@@ -13,5 +14,6 @@
 export default {
   name: "ActionBarCommonControl",
   props: ["label"],
+  emits: ["click"],
 };
 </script>

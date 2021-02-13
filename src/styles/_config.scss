@@ -1,5 +1,10 @@
 @use "./variables" as var;
 
+:root {
+  --app-side-width:#{var.$app-side-width};
+  --app-side-toggle-value: 0rem;
+}
+
 $primary: var.$primary;
 $secondary: var.$secondary;
 $body-bg: #000;

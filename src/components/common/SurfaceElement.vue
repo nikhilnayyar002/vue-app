@@ -12,7 +12,7 @@ export default {
 </script>
 <style>
 .SurfaceElement {
-  transition: left 1s;
+  transition: left 0.5s;
   left: 0;
   cursor: pointer;
 }

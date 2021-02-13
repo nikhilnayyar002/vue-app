@@ -15,7 +15,7 @@ import Avatar from "../common/Avatar.vue";
 import SampleRajat from "../../assets/sample-rajat.jpg";
 export default {
   name: "NormalComment",
-  data: function () {
+  data() {
     return {
       SampleRajat,
     };

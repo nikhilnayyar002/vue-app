@@ -22,7 +22,7 @@ import SampleHimanshu from "../../assets/sample-himanshu.jpg";
 
 export default {
   name: "HandRaiseComment",
-  data: function () {
+  data() {
     return {
       SampleHimanshu
     }

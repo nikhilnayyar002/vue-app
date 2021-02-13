@@ -1,6 +1,8 @@
 <template>
-  <ActionBarCommonControl label="Chat"> <ChatIcon /></ActionBarCommonControl>
-   <ActionBarCommonControl label="Leave"> <LeaveIcon /></ActionBarCommonControl>
+  <ActionBarCommonControl @click="toggleAppSide" label="Chat">
+    <ChatIcon
+  /></ActionBarCommonControl>
+  <ActionBarCommonControl label="Leave"> <LeaveIcon /></ActionBarCommonControl>
 </template>
 
 <script>
@@ -10,6 +12,7 @@ import LeaveIcon from "../common/Icons/LeaveIcon.vue";
 
 export default {
   name: "ActionBarGeneralControls",
+  inject: ["toggleAppSide"],
   components: {
     ActionBarCommonControl,
     LeaveIcon,

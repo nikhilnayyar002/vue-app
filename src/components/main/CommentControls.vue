@@ -75,7 +75,7 @@ export default {
       resetMsgInput,
     }
   },
-  data: function () {
+  data() {
     return {
       SampleRajat,
     };

@@ -1,5 +1,5 @@
 <template>
-  <div class="AppSide bg-secondary h-100 px-4 rounded-3">
+  <div v-show="isAppSideOpen.value" class="AppSide bg-secondary h-100 px-4 rounded-3">
     <CommentArea />
   </div>
 </template>
@@ -9,6 +9,7 @@ import CommentArea from "./CommentArea.vue";
 
 export default {
   name: "AppSide",
+  inject: ["isAppSideOpen"],
   components: {
     CommentArea,
   },
@@ -18,6 +19,6 @@ export default {
 @use "../../styles/variables";
 
 .AppSide {
-    width: variables.$app-side-width;
+  width: variables.$app-side-width;
 }
 </style>

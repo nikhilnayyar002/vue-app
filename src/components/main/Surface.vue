@@ -72,6 +72,6 @@ $anonymous-1: math.ceil(variables.$app-main-padding-x/2);
   left: calc(-100% - #{$anonymous-1});
 }
 #secondSurfaceElem.in-active {
-  left: calc(100% + #{variables.$app-side-width} + #{$anonymous-1});
+  left: calc(100% + var(--app-side-toggle-value) + #{$anonymous-1});
 }
 </style>
