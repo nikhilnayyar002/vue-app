@@ -116,11 +116,17 @@ App
 │       └── CommentArea
 │           ├── Comment
 │           │   ├── HandRaiseComment
+│           │   │   └── Avatar
 │           │   └── NormalComment
+│           │       └── Avatar
 │           └── CommentControls
+│               └── Avatar
 └── AppFooter
     └── ActionBar
-        ├── GeneralControls
-        ├── HostControls
-        └── ParticipantControls
+        ├── ActionBarGeneralControls
+        │   └── ActionBarCommonControl
+        ├── ActionBarHostControls
+        │   └── ActionBarCommonControl
+        └── ActionBarParticipantControls
+            └── ActionBarCommonControl
 ```
