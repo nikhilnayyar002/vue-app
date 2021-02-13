@@ -102,16 +102,17 @@ App
 ├── AppMain
 │   ├── AppContent
 │   │   └── Surface
-│   │       ├── Reflection
-│   │       │   ├── Threator
-│   │       │   │   ├── ThreatorHost
-│   │       │   │   └── UserReflection
-│   │       │   └── UserReflection
-│   │       └── RemoteHosts
-│   │           ├── Participants
-│   │           │   └── Participant
-│   │           └── Spectators
-│   │               └── Spectator
+│   │       └── SurfaceElement
+│   │           ├── Reflection
+│   │           │   ├── Threator
+│   │           │   │   ├── ThreatorHost
+│   │           │   │   └── UserReflection
+│   │           │   └── UserReflection
+│   │           └── RemoteHosts
+│   │               ├── Participants
+│   │               │   └── Participant
+│   │               └── Spectators
+│   │                   └── Spectator
 │   └── AppSide
 │       └── CommentArea
 │           ├── Comment

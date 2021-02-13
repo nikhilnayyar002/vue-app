@@ -18,7 +18,7 @@
           <button class="box-2rem btn btn-primary p-0 rounded-circle" @click="resetMsgInput">
             <svg
               class="box-1rem"
-              :style="{ transform: 'rotateZ(90deg)' }"
+              style="transform: rotateZ(90deg);"
               viewBox="0 0 12.979 6.775"
             >
               <path

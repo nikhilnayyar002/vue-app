@@ -14,8 +14,10 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss">
+@use "../../styles/variables";
+
 .AppSide {
-    width: 21rem;
+    width: variables.$app-side-width;
 }
 </style>
