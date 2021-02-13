@@ -1,5 +1,5 @@
 <template>
-  <div v-show="isAppSideOpen.value" class="AppSide bg-secondary h-100 px-4 rounded-3">
+  <div v-show="isAppSideOpen.value" class="AppSide h-100 ps-4">
     <CommentArea />
   </div>
 </template>

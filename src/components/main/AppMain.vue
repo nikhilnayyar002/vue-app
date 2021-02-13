@@ -3,7 +3,7 @@
     <div class="col">
       <AppContent />
     </div>
-    <div class="col-auto" style="z-index:2;">
+    <div class="col-auto" style="z-index:200;">
       <AppSide />
     </div>
   </div>

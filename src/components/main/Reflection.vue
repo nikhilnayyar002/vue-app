@@ -1,9 +1,13 @@
 <template>
-  <div class="bg-danger h-100 w-100"></div>
+  <UserReflection />
 </template>
 
 <script>
+import UserReflection from "../common/UserReflection.vue";
 export default {
   name: "Reflection",
+  components: {
+    UserReflection,
+  },
 };
 </script>

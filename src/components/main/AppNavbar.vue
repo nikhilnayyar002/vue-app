@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="align-items-center bg-secondary flex-nowrap g-0 px-3 py-2 row"
-  >
+  <div class="align-items-center bg-secondary flex-nowrap g-0 px-3 py-2 row">
     <div class="col-auto">
       <button class="btn btn-secondary">
         <ArrowIcon class="box-1rem" />
@@ -11,6 +9,7 @@
     <div class="col-auto">
       <button
         class="align-items-center btn-black btn d-inline-flex flex-nowrap"
+        @click="toggleFullScreen"
       >
         <ExitFullScreenIcon />
         <span id="full-screen-toggle-btn-text">Exit Full Screen</span>
@@ -22,9 +21,21 @@
 <script>
 import ArrowIcon from "../common/Icons/ArrowIcon.vue";
 import ExitFullScreenIcon from "../common/Icons/ExitFullScreenIcon.vue";
+import {
+  enterFullscreen,
+  exitFullscreen,
+  isFullScreenCurrently,
+} from "../../lib/common";
 
 export default {
   name: "AppNavbar",
+  methods: {
+    toggleFullScreen() {
+      isFullScreenCurrently()
+        ? exitFullscreen()
+        : enterFullscreen(document.documentElement);
+    },
+  },
   components: {
     ArrowIcon,
     ExitFullScreenIcon,
@@ -32,9 +43,8 @@ export default {
 };
 </script>
 <style scoped>
-
 #full-screen-toggle-btn-text {
-  padding-left: 0.7rem; padding-top: 1px;
+  padding-left: 0.7rem;
+  padding-top: 1px;
 }
-
 </style>
