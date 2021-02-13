@@ -1,5 +1,5 @@
 <template>
-  <ActionBarCommonControl @click="toggleAppSide" label="Chat">
+  <ActionBarCommonControl @click="toggleAppSide" label="Chat" :isActive="isAppSideOpen.value">
     <ChatIcon
   /></ActionBarCommonControl>
   <ActionBarCommonControl label="Leave"> <LeaveIcon /></ActionBarCommonControl>
@@ -12,7 +12,7 @@ import LeaveIcon from "../common/Icons/LeaveIcon.vue";
 
 export default {
   name: "ActionBarGeneralControls",
-  inject: ["toggleAppSide"],
+  inject: ["isAppSideOpen","toggleAppSide"],
   components: {
     ActionBarCommonControl,
     LeaveIcon,

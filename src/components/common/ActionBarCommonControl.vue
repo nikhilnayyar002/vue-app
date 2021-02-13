@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{ 'ActionBarCommonControl--active': isActive }">
     <button
       class="align-items-center btn btn-secondary d-flex justify-content-center p-0 rounded-circle box-3rem mb-3 mx-auto"
       @click="this.$emit('click')"
@@ -13,7 +13,14 @@
 <script>
 export default {
   name: "ActionBarCommonControl",
-  props: ["label"],
+  props: ["label", "isActive"],
   emits: ["click"],
 };
 </script>
+<style lang="scss">
+@use "../../styles/variables";
+
+.ActionBarCommonControl--active svg * {
+  fill: variables.$primary;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
-  <ActionBarCommonControl label="Video"> <VideoIcon /></ActionBarCommonControl>
-  <ActionBarCommonControl label="Audio"> <MicIcon /></ActionBarCommonControl>
+  <ActionBarCommonControl label="Video" :isActive="true"> <VideoIcon /></ActionBarCommonControl>
+  <ActionBarCommonControl label="Audio" :isActive="true"> <MicIcon /></ActionBarCommonControl>
   <ActionBarCommonControl label="Share">
     <ShareScreenIcon
   /></ActionBarCommonControl>
