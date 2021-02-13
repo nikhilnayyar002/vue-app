@@ -1,10 +1,12 @@
 @use "./variables" as var;
 
+//add css variables to document root
 :root {
   --app-side-width:#{var.$app-side-width};
   --app-side-toggle-value: 0rem;
 }
 
+//these variables will override bootstrap variables
 $primary: var.$primary;
 $secondary: var.$secondary;
 $body-bg: #000;
@@ -14,6 +16,7 @@ $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 500;
 
+//import and customize bootstrap variables
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
@@ -21,13 +24,18 @@ $font-weight-bold: 500;
 $custom-colors: (
   "black": #000
 );
+
+//these variables will override bootstrap variables
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $custom-font-sizes: (
   7: $font-size-base * 0.875 //14px,,
 );
+
+//these variables will override bootstrap variables
 $font-sizes: map-merge($font-sizes, $custom-font-sizes);
 
+//import and customize bootstrap utilities
 @import "bootstrap/scss/utilities";
 
 $custom-utilities: (
@@ -41,6 +49,7 @@ $custom-utilities: (
   ),
 );
 
+//these variables will override bootstrap variables
 $utilities: map-merge($utilities, $custom-utilities);
 
 // quick patch

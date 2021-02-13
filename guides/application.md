@@ -131,3 +131,15 @@ App
         └── ActionBarParticipantControls
             └── ActionBarCommonControl
 ```
+
+## SVG as components
+
+If you want to reuse svgs for example as an icon consider creating it as component. For example currently icon components are created under ```components/common/icons```
+
+```
+components
+├── common
+│   ├── icons
+│   │   ├── ArrowIcon.vue
+│   │   ├── ChatIcon.vue
+```

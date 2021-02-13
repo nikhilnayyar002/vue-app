@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import NoUserImgIcon from "./Icons/NoUserImgIcon.vue";
+import NoUserImgIcon from "./icons/NoUserImgIcon.vue";
 
 export default {
   name: "UserReflection",
