@@ -2,13 +2,13 @@
   <div>
     <div class="border-top opacity-70"></div>
     <div class="row g-0 flex-nowrap py-3">
-      <div class="align-self-end col-auto pb-2 pe-2">
+      <!-- <div class="align-self-end col-auto pb-2 pe-2">
         <Avatar :src="SampleRajat" />
-      </div>
+      </div> -->
       <div class="col comment-control-box g-0 p-2 rounded-3 row">
         <textarea
           ref="textAreaRef"
-          class="bg-transparent comment-control-box__textarea text-white col px-2 align-self-center"
+          class="bg-transparent comment-control-box__textarea text-body col px-2 align-self-center"
           @keyup="autoGrow"
           rows="1"
           placeholder="Enter your comment"
@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import Avatar from "../common/Avatar.vue";
-import SampleRajat from "../../assets/sample-rajat.jpg";
+// import Avatar from "../common/Avatar.vue";
+import SampleRajat from "../../assets/sample-r.jpg";
 import { ref, onMounted } from "vue";
 
 export default {
@@ -82,7 +82,7 @@ export default {
   },
   methods: {},
   components: {
-    Avatar,
+    // Avatar,
   },
 };
 </script>

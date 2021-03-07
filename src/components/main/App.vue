@@ -1,6 +1,6 @@
 <template>
   <div class="row g-0 flex-nowrap flex-column h-100">
-    <div class="col-auto">
+    <div class="col-auto shadow">
       <AppNavbar />
     </div>
     <div class="col overflow-hidden">
@@ -10,6 +10,7 @@
       <AppFooter />
     </div>
   </div>
+  <BecomeHostMessage />
 </template>
 
 <script>
@@ -19,6 +20,7 @@ import AppMain from "./AppMain";
 import AppNavbar from "./AppNavbar";
 import AppFooter from "./AppFooter";
 import { computed, ref } from "vue";
+import BecomeHostMessage from "./BecomeHostMessage.vue";
 /** */
 
 export default {
@@ -27,7 +29,7 @@ export default {
     const isAppSideOpenRef = ref(false);
     function toggleAppSide() {
       isAppSideOpenRef.value = !isAppSideOpenRef.value;
-      
+
       /** update CSS variable value so that it consumers get aware of it. */
       const appSideWidth = getComputedStyle(
         document.documentElement
@@ -54,6 +56,7 @@ export default {
     AppNavbar,
     AppMain,
     AppFooter,
+    BecomeHostMessage,
   },
 };
 </script>

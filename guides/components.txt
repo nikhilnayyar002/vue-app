@@ -17,8 +17,6 @@ App
 ## AppSide
 ### CommentArea
 #### Comment
-##### HandRaiseComment
-###### Avatar
 ##### NormalComment
 ###### Avatar
 #### CommentControls
@@ -31,3 +29,4 @@ App
 #### ActionBarCommonControl
 ### ActionBarParticipantControls
 #### ActionBarCommonControl
+# BecomeHostMessage

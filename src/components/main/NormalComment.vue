@@ -4,7 +4,7 @@
       <Avatar :src="SampleRajat" />
     </div>
     <div class="col fs-7 ps-2 overflow-hidden">
-      <p class="fw-bold mb-1 text-truncate">Rajat Patel</p>
+      <p class="fw-bold mb-1 text-truncate">Nikhil Nayyar</p>
       <p class="m-0">Hello Everyone</p>
     </div>
   </div>
@@ -12,7 +12,7 @@
 
 <script>
 import Avatar from "../common/Avatar.vue";
-import SampleRajat from "../../assets/sample-rajat.jpg";
+import SampleRajat from "../../assets/sample-r.jpg";
 export default {
   name: "NormalComment",
   data() {

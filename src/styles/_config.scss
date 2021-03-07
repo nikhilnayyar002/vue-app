@@ -9,8 +9,8 @@
 //these variables will override bootstrap variables
 $primary: var.$primary;
 $secondary: var.$secondary;
-$body-bg: #000;
-$body-color:#fff;
+$body-bg: #eaeaea;
+$body-color:#424242;
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -77,3 +77,8 @@ textarea {
   opacity: 1 !important;
 }
 // .
+
+//global svgs 
+svg * {
+  fill: var.$icon-color;
+}

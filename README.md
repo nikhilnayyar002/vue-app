@@ -4,6 +4,8 @@
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-green.svg)
 ![Make a pull request](https://img.shields.io/badge/PRs-welcome-red.svg)
 
+<img src="./screenshots/2021-03-07_151808.png" />
+
 ## Installing dependencies
 
 * since **package-lock.json** file is in repo. One can use the following command to install dependencies:

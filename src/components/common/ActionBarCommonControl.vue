@@ -1,12 +1,13 @@
 <template>
-  <div :class="{ 'ActionBarCommonControl--active': isActive }">
+  <div :class="['ActionBarCommonControl',{ 'ActionBarCommonControl--active': isActive }]">
     <button
-      class="align-items-center btn btn-secondary d-flex justify-content-center p-0 rounded-circle box-3rem mb-3 mx-auto"
+      :title="label"
+      class="shadow align-items-center btn btn-secondary d-flex justify-content-center p-0 rounded-circle box-3rem mb-3 mx-auto"
       @click="this.$emit('click')"
     >
       <slot></slot>
     </button>
-    <div class="fs-7 text-center opacity-50">{{ label }}</div>
+    <!-- <div class="fs-7 text-center fw-bold">{{ label }}</div> -->
   </div>
 </template>
 
@@ -19,7 +20,6 @@ export default {
 </script>
 <style lang="scss">
 @use "../../styles/variables";
-
 .ActionBarCommonControl--active svg * {
   fill: variables.$primary;
 }

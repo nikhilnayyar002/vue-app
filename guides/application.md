@@ -24,7 +24,7 @@ Add your fetch, axios etc apis here and provide it to the vuex components etc as
 ```
 ├── server
 │   └── apis
-│       └── videoConference.js
+│       └── vueApp.js
 ```
 
 ### ```src/assets```
@@ -116,20 +116,19 @@ App
 │   └── AppSide
 │       └── CommentArea
 │           ├── Comment
-│           │   ├── HandRaiseComment
-│           │   │   └── Avatar
 │           │   └── NormalComment
 │           │       └── Avatar
 │           └── CommentControls
 │               └── Avatar
-└── AppFooter
-    └── ActionBar
-        ├── ActionBarGeneralControls
-        │   └── ActionBarCommonControl
-        ├── ActionBarHostControls
-        │   └── ActionBarCommonControl
-        └── ActionBarParticipantControls
-            └── ActionBarCommonControl
+├── AppFooter
+│   └── ActionBar
+│       ├── ActionBarGeneralControls
+│       │   └── ActionBarCommonControl
+│       ├── ActionBarHostControls
+│       │   └── ActionBarCommonControl
+│       └── ActionBarParticipantControls
+│           └── ActionBarCommonControl
+└── BecomeHostMessage
 ```
 
 ## SVG as components

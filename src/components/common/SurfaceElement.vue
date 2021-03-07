@@ -1,5 +1,5 @@
 <template>
-  <div class="SurfaceElement position-absolute h-100 w-100 bg-secondary" @click="this.$emit('click')">
+  <div class="SurfaceElement position-absolute h-100 w-100 bg-secondary shadow-lg" @click="this.$emit('click')">
     <slot></slot>
   </div>
 </template>
