@@ -21,8 +21,10 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss">
+@use "@/styles/variables";
+
 .AppMain {
-  padding: 2rem 5rem;
+  padding: 2rem variables.$app-main-padding-x;
 }
 </style>

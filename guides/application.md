@@ -159,3 +159,7 @@ components
 │   │   ├── ArrowIcon.vue
 │   │   ├── ChatIcon.vue
 ```
+
+## Side toggle and sliding mechanism
+
+[See here](side-toggle-and-sliding.md)
