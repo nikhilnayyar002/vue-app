@@ -101,18 +101,18 @@ App
 ├── AppNavbar
 ├── AppMain
 │   ├── AppContent
-│   │   └── Surface
-│   │       └── SurfaceElement
-│   │           ├── Reflection
-│   │           │   ├── Threator
-│   │           │   │   ├── ThreatorHost
-│   │           │   │   └── UserReflection
-│   │           │   └── UserReflection
+│   │   └── Slider
+│   │       └── SliderElement
+│   │           ├── VideoScreen
+│   │           │   ├── RTCUsersVideo
+│   │           │   │   ├── RTCUserVideo
+│   │           │   │   └── UserVideo
+│   │           │   └── UserVideo
 │   │           └── RemoteHosts
-│   │               ├── Participants
-│   │               │   └── Participant
-│   │               └── Spectators
-│   │                   └── Spectator
+│   │               ├── RTCHosts
+│   │               │   └── RTCHost
+│   │               └── Audience
+│   │                   └── AudienceHost
 │   └── AppSide
 │       └── CommentArea
 │           ├── Comment
@@ -126,19 +126,19 @@ App
 │       │   └── ActionBarCommonControl
 │       ├── ActionBarHostControls
 │       │   └── ActionBarCommonControl
-│       └── ActionBarParticipantControls
+│       └── ActionBarAudienceControls
 │           └── ActionBarCommonControl
 └── BecomeHostMessage
 ```
 
 ## SVG as components
 
-If you want to reuse svgs for example as an icon consider creating it as component. For example currently icon components are created under ```components/common/icons```
+If you want to reuse svgs for example as an icon consider creating it as component. For example currently icon components are created under ```components/common/Icons```
 
 ```
 components
 ├── common
-│   ├── icons
+│   ├── Icons
 │   │   ├── ArrowIcon.vue
 │   │   ├── ChatIcon.vue
 ```

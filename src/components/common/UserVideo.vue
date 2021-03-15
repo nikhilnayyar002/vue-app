@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import NoUserImgIcon from "./icons/NoUserImgIcon.vue";
+import NoUserImgIcon from "./Icons/NoUserImgIcon";
 
 export default {
-  name: "UserReflection",
+  name: "UserVideo",
   components: {
     NoUserImgIcon,
   },

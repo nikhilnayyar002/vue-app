@@ -1,17 +1,17 @@
 <template>
-  <div class="SurfaceElement position-absolute h-100 w-100 bg-secondary shadow-lg" @click="this.$emit('click')">
+  <div class="SliderElement position-absolute h-100 w-100 bg-secondary shadow-lg" @click="this.$emit('click')">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: "SurfaceElement",
+  name: "SliderElement",
   emits: ["click"],
 };
 </script>
 <style>
-.SurfaceElement {
+.SliderElement {
   transition: left 0.5s;
   left: 0;
   cursor: pointer;

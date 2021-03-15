@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="BecomeHost-accept-reject row g-0 flex-nowrap">
-      <button class="btn col fs-7 text-body fw-bold shadow btn-primary">Accept</button>
+      <button class="btn col fs-7 fw-bold shadow btn-primary">Accept</button>
       <div class="col-auto BecomeHost-accept-reject__border my-1 p-2"></div>
       <button class="btn col fs-7 text-body fw-bold shadow">Reject</button>
     </div>

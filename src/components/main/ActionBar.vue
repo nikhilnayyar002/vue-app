@@ -1,7 +1,7 @@
 <template>
   <div class="ActionBar d-flex flex-nowrap">
     <ActionBarHostControls />
-    <ActionBarParticipantControls />
+    <ActionBarAudienceControls />
     <ActionBarGeneralControls />
   </div>
 </template>
@@ -9,14 +9,14 @@
 <script>
 import ActionBarGeneralControls from "./ActionBarGeneralControls.vue";
 import ActionBarHostControls from "./ActionBarHostControls.vue";
-import ActionBarParticipantControls from "./ActionBarParticipantControls.vue";
+import ActionBarAudienceControls from "./ActionBarAudienceControls.vue";
 
 export default {
   name: "ActionBar",
   components: {
     ActionBarGeneralControls,
     ActionBarHostControls,
-    ActionBarParticipantControls,
+    ActionBarAudienceControls,
   },
 };
 </script>

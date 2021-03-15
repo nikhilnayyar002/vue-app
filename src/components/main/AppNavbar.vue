@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import ArrowIcon from "../common/icons/ArrowIcon.vue";
-import ExitFullScreenIcon from "../common/icons/ExitFullScreenIcon.vue";
+import ArrowIcon from "../common/Icons/ArrowIcon.vue";
+import ExitFullScreenIcon from "../common/Icons/ExitFullScreenIcon.vue";
 import {
   enterFullscreen,
   exitFullscreen,

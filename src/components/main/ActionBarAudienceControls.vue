@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import BecomeHostIcon from "../common/icons/BecomeHostIcon.vue";
+import BecomeHostIcon from "../common/Icons/BecomeHostIcon.vue";
 import ActionBarCommonControl from "../common/ActionBarCommonControl.vue";
 
 export default {
-  name: "ActionBarParticipantControls",
+  name: "ActionBarAudienceControls",
   components: {
     ActionBarCommonControl,
     BecomeHostIcon,

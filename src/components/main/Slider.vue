@@ -1,38 +1,38 @@
 <template>
-  <SurfaceElement
-    id="firstSurfaceElem"
+  <SliderElement
+    id="firstSliderElem"
     ref="firstElemRef"
-    @click="onSurfaceElemClick(0)"
+    @click="onSliderElemClick(0)"
   >
-    <Reflection />
-  </SurfaceElement>
-  <SurfaceElement
-    id="secondSurfaceElem"
+    <VideoScreen />
+  </SliderElement>
+  <SliderElement
+    id="secondSliderElem"
     ref="secondElemRef"
-    @click="onSurfaceElemClick(1)"
+    @click="onSliderElemClick(1)"
   >
     <RemoteHosts />
-  </SurfaceElement>
+  </SliderElement>
 </template>
 
 <script>
-import SurfaceElement from "../common/SurfaceElement.vue";
+import SliderElement from "./SliderElement.vue";
 import { ref, onMounted } from "vue";
-import Reflection from "./Reflection.vue";
+import VideoScreen from "./VideoScreen.vue";
 import RemoteHosts from "./RemoteHosts.vue";
 
 export default {
-  name: "Surface",
+  name: "Slider",
   components: {
-    SurfaceElement,
-    Reflection,
+    SliderElement,
+    VideoScreen,
     RemoteHosts,
   },
   setup() {
     const firstElemRef = ref(null);
     const secondElemRef = ref(null);
 
-    function onSurfaceElemClick(elemNum) {
+    function onSliderElemClick(elemNum) {
       switch (elemNum) {
         case 0: {
           firstElemRef.value.$el.classList.remove("in-active");
@@ -57,7 +57,7 @@ export default {
     return {
       firstElemRef,
       secondElemRef,
-      onSurfaceElemClick,
+      onSliderElemClick,
     };
   },
 };
@@ -68,10 +68,10 @@ export default {
 
 $anonymous-1: math.ceil(variables.$app-main-padding-x/2);
 
-#firstSurfaceElem.in-active {
+#firstSliderElem.in-active {
   left: calc(-100% - #{$anonymous-1});
 }
-#secondSurfaceElem.in-active {
+#secondSliderElem.in-active {
   left: calc(100% + var(--app-side-toggle-value) + #{$anonymous-1});
 }
 </style>

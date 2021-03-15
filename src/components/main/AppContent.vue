@@ -1,16 +1,16 @@
 <template>
   <div class="h-100 w-100 row g-0 d-flex flex-nowrap position-relative">
-    <Surface />
+    <Slider />
   </div>
 </template>
 
 <script>
-import Surface from "./Surface.vue";
+import Slider from "./Slider.vue";
 
 export default {
   name: "AppContent",
   components: {
-    Surface,
+    Slider,
   },
 };
 </script>
