@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Avatar from "../common/Avatar.vue";
-import SampleRajat from "../../assets/sample-r.jpg";
+import Avatar from '../../../../../common/Avatar.vue';
+import SampleRajat from "@/assets/sample-r.jpg";
 export default {
   name: "NormalComment",
   data() {

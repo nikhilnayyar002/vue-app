@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CommentArea from "./CommentArea.vue";
+import CommentArea from "./CommentArea/CommentArea.vue";
 
 export default {
   name: "AppSide",
@@ -16,7 +16,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@use "../../styles/variables";
+@use "@/styles/variables";
 
 .AppSide {
   width: variables.$app-side-width;

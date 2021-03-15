@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import UserVideo from "../common/UserVideo.vue";
+import UserVideo from "../../../../../../common/UserVideo.vue";
 export default {
   name: "VideoScreen",
   components: {

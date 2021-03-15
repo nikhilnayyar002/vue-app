@@ -6,9 +6,9 @@
 </template>
 
 <script>
-import ActionBarCommonControl from "../common/ActionBarCommonControl.vue";
-import ChatIcon from "../common/Icons/ChatIcon.vue";
-import LeaveIcon from "../common/Icons/LeaveIcon.vue";
+import ActionBarCommonControl from "../../../common/ActionBarCommonControl.vue";
+import ChatIcon from "../../../common/Icons/ChatIcon.vue";
+import LeaveIcon from "../../../common/Icons/LeaveIcon.vue";
 
 export default {
   name: "ActionBarGeneralControls",

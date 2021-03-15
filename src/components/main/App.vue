@@ -16,9 +16,9 @@
 <script>
 /** import index style */
 import "../../styles/index.scss";
-import AppMain from "./AppMain";
+import AppMain from "./AppMain/AppMain";
 import AppNavbar from "./AppNavbar";
-import AppFooter from "./AppFooter";
+import AppFooter from "./AppFooter/AppFooter";
 import { computed, ref } from "vue";
 import BecomeHostMessage from "./BecomeHostMessage.vue";
 /** */

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ArrowIcon from "../common/Icons/ArrowIcon.vue";
+import ArrowIcon from "../common/Icons/ArrowIcon";
 import ExitFullScreenIcon from "../common/Icons/ExitFullScreenIcon.vue";
 import {
   enterFullscreen,

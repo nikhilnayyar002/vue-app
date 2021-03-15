@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Comment from "./Comment.vue";
-import CommentControls from "./CommentControls.vue";
+import Comment from "./Comment/Comment.vue";
+import CommentControls from "./CommentControls/CommentControls.vue";
 
 export default {
   name: "CommentArea",

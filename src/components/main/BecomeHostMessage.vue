@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Avatar from "../common/Avatar.vue";
+import Avatar from "../common/Avatar";
 import SampleHimanshu from "../../assets/sample-h.jpg";
 
 export default {

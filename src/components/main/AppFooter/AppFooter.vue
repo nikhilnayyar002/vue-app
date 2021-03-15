@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ActionBar from "./ActionBar.vue";
+import ActionBar from "./ActionBar/ActionBar.vue";
 
 export default {
   name: "AppFooter",

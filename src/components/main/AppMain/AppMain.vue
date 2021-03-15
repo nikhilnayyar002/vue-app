@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import AppContent from "./AppContent.vue";
-import AppSide from "./AppSide.vue";
+import AppContent from "./AppContent/AppContent.vue";
+import AppSide from "./AppSide/AppSide.vue";
 
 export default {
   name: "AppMain",

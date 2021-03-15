@@ -42,7 +42,7 @@
 
 <script>
 // import Avatar from "../common/Avatar.vue";
-import SampleRajat from "../../assets/sample-r.jpg";
+// import SampleRajat from "@/assets/sample-r.jpg";
 import { ref, onMounted } from "vue";
 
 export default {
@@ -77,7 +77,7 @@ export default {
   },
   data() {
     return {
-      SampleRajat,
+      // SampleRajat,
     };
   },
   methods: {},

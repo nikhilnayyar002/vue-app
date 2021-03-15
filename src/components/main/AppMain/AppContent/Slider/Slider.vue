@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import SliderElement from "./SliderElement.vue";
+import SliderElement from "./SliderElement/SliderElement.vue";
 import { ref, onMounted } from "vue";
-import VideoScreen from "./VideoScreen.vue";
-import RemoteHosts from "./RemoteHosts.vue";
+import VideoScreen from "./SliderElement/VideoScreen/VideoScreen.vue";
+import RemoteHosts from "./SliderElement/RemoteHosts/RemoteHosts.vue";
 
 export default {
   name: "Slider",
@@ -63,7 +63,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@use "../../styles/variables";
+@use "@/styles/variables";
 @use "sass:math";
 
 $anonymous-1: math.ceil(variables.$app-main-padding-x/2);

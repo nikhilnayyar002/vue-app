@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import MicIcon from "../common/Icons/MicIcon.vue";
-import ShareScreenIcon from "../common/Icons/ShareScreenIcon.vue";
-import VideoIcon from "../common/Icons/VideoIcon.vue";
-import ActionBarCommonControl from "../common/ActionBarCommonControl.vue";
+import MicIcon from "../../../common/Icons/MicIcon.vue";
+import ShareScreenIcon from "../../../common/Icons/ShareScreenIcon.vue";
+import VideoIcon from "../../../common/Icons/VideoIcon.vue";
+import ActionBarCommonControl from "../../../common/ActionBarCommonControl.vue";
 
 export default {
   name: "ActionBarHostControls",

@@ -92,6 +92,23 @@ Thus making all related values stored in one place they can be reflected whereev
 ### ```src/main.js```
 It creates the vue application.
 
+## Refering to src directory within components
+
+* Example: for quick assets etc. references
+    ```js
+    import SampleRajat from "@/assets/sample-r.jpg";
+    ```
+* Example: for quick stylesheets references
+    ```scss
+    <style lang="scss">
+    @use "@/styles/variables";
+
+    .AppSide {
+        width: variables.$app-side-width;
+    }
+    </style>
+    ```
+
 ## Component Tree
 
 Below is the tree diagram generated using **VS Code Extension: aprilandjan.ascii-tree-generator** from the structure mentioned in the file [components.txt](components.txt). Learn more about what a specific component does [here](components.md).
