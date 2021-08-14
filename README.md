@@ -1,8 +1,8 @@
 # Vue-App
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Maintained](https://img.shields.io/badge/Maintained-Yes-green.svg)
 ![Make a pull request](https://img.shields.io/badge/PRs-welcome-red.svg)
+<!-- ![Maintained](https://img.shields.io/badge/Maintained-Yes-green.svg) -->
 
 <img src="./screenshots/2021-03-07_151808.png" />
 
