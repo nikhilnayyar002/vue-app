@@ -14,11 +14,7 @@
     npm ci
     ```
 
-* on occassions a developer should be responsible for updating dependencies using command:
-
-    ```
-    npm i
-    ```
+* on occassions a developer should be responsible for updating dependencies.
 
 ## Guides
 
